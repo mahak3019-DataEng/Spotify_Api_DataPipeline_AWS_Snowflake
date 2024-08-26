@@ -8,7 +8,8 @@ Link: https://developer.spotify.com/documentation/web-api/tutorials/getting-star
 Youtube Tutorials link: https://www.youtube.com/watch?v=WAmEZBEeNmg&t=1296s
 
 ### Project Description
-This project involves creating a data pipeline using AWS Lambda functions and Snowflake. The pipeline performs the following tasks:
+This project consists of two AWS Lambda functions that interact with AWS S3 and Snowflake. The project also integrates with AWS CloudWatch and Snowpipe for automated data processing.
+The pipeline performs the following tasks:
 
 ### Data Retrieval:
 
