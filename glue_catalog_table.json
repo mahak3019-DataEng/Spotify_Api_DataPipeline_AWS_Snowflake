@@ -1,0 +1,104 @@
+{
+    "Table": {
+        "Name": "track_songs_data",
+        "DatabaseName": "spotify_100_songs_project",
+        "Owner": "owner",
+        "CreateTime": "2024-08-23T16:28:43+05:30",
+        "UpdateTime": "2024-08-23T16:28:43+05:30",
+        "LastAccessTime": "2024-08-23T16:28:43+05:30",
+        "Retention": 0,
+        "StorageDescriptor": {
+            "Columns": [
+                {
+                    "Name": "track_id",
+                    "Type": "string"
+                },
+                {
+                    "Name": "track_name",
+                    "Type": "string"
+                },
+                {
+                    "Name": "track_artists",
+                    "Type": "string"
+                },
+                {
+                    "Name": "track_album_id",
+                    "Type": "string"
+                },
+                {
+                    "Name": "track_album_name",
+                    "Type": "string"
+                },
+                {
+                    "Name": "track_album_release_date",
+                    "Type": "string"
+                },
+                {
+                    "Name": "track_album_total_tracks",
+                    "Type": "bigint"
+                },
+                {
+                    "Name": "track_album_artists",
+                    "Type": "string"
+                },
+                {
+                    "Name": "track_album_url",
+                    "Type": "string"
+                }
+            ],
+            "Location": "s3://spotify-api-project2-mahak/transformed_data/track_songs_data/",
+            "InputFormat": "org.apache.hadoop.mapred.TextInputFormat",
+            "OutputFormat": "org.apache.hadoop.hive.ql.io.HiveIgnoreKeyTextOutputFormat",
+            "Compressed": false,
+            "NumberOfBuckets": -1,
+            "SerdeInfo": {
+                "SerializationLibrary": "org.apache.hadoop.hive.serde2.lazy.LazySimpleSerDe",
+                "Parameters": {
+                    "field.delim": ","
+                }
+            },
+            "BucketColumns": [],
+            "SortColumns": [],
+            "Parameters": {
+                "skip.header.line.count": "1",
+                "sizeKey": "22327",
+                "objectCount": "1",
+                "UPDATED_BY_CRAWLER": "spotify_api_crawler",
+                "recordCount": "113",
+                "CrawlerSchemaSerializerVersion": "1.0",
+                "averageRecordSize": "197",
+                "compressionType": "none",
+                "CrawlerSchemaDeserializerVersion": "1.0",
+                "classification": "csv",
+                "columnsOrdered": "true",
+                "delimiter": ",",
+                "areColumnsQuoted": "false",
+                "typeOfData": "file"
+            },
+            "StoredAsSubDirectories": false
+        },
+        "PartitionKeys": [],
+        "TableType": "EXTERNAL_TABLE",
+        "Parameters": {
+            "skip.header.line.count": "1",
+            "sizeKey": "22327",
+            "objectCount": "1",
+            "UPDATED_BY_CRAWLER": "spotify_api_crawler",
+            "recordCount": "113",
+            "CrawlerSchemaSerializerVersion": "1.0",
+            "averageRecordSize": "197",
+            "compressionType": "none",
+            "CrawlerSchemaDeserializerVersion": "1.0",
+            "classification": "csv",
+            "columnsOrdered": "true",
+            "delimiter": ",",
+            "areColumnsQuoted": "false",
+            "typeOfData": "file"
+        },
+        "CreatedBy": "arn:aws:sts::533267281673:assumed-role/AWSGlueServiceRole-spotify_project/AWS-Crawler",
+        "IsRegisteredWithLakeFormation": false,
+        "CatalogId": "533267281673",
+        "VersionId": "0",
+        "IsMultiDialectView": false
+    }
+}
