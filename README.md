@@ -1,5 +1,9 @@
 # SPOTIFY API Data Pipeline with AWS Lambda and Snowflake
 
+### Connection with Spotify Web API
+Link for connection: https://developer.spotify.com/documentation/web-api/tutorials/implicit-flow
+Link: https://developer.spotify.com/documentation/web-api/tutorials/getting-started
+Youtube Tutorials link: https://www.youtube.com/watch?v=WAmEZBEeNmg&t=1296s
 
 ### Project Description
 This project involves creating a data pipeline using AWS Lambda functions and Snowflake. The pipeline performs the following tasks:
