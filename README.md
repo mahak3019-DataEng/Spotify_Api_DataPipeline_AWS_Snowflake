@@ -1,4 +1,4 @@
-# Data Pipeline with AWS Lambda and Snowflake
+# SPOTIFY API Data Pipeline with AWS Lambda and Snowflake
 
 
 ### Project Description
