@@ -65,7 +65,9 @@ This project involves creating a data pipeline that extracts Spotify playlist da
 - Apache Airflow
 ### for Airflow setup
 curl -LfO 'https://airflow.apache.org/docs/apache-airflow/2.9.1/docker-compose.yaml'
+
 mkdir -p ./dags ./logs ./plugins ./config
+
 docker-compose up airflow-init
 docker compose up -d
 - AWS S3
